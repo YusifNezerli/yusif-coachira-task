@@ -5,11 +5,36 @@
     background-color:rgb(29,29,29);
     color: white;
     width: auto;
-    height: 40px;
+    height: 30px;
     display: flex;
     justify-content: space-between;
     padding-left: 60px;
     padding-right: 60px;
+    align-items: center;
+
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: auto;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color:#F85E2E;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+    transition: transform .3s ease-out;
+}
+  
+#myBtn:hover {
+    background-color: #F85E2E;
+    transform: scale(1.1);  
 
 }
 .bosluq{
@@ -17,24 +42,6 @@
 }
 .adress{
     display: flex;
-}
-.animasiya1{
-    display: inline-block;
-    padding-bottom: 0.20rem;
-    position: relative;
-}
-.animasiya1::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 1px;
-    background-color: gray;
-    transition: width 0.25s ease-out;
-}
-.animasiya1:hover::before{
-    width: 100%;
 }
 
 .social{
@@ -56,10 +63,14 @@
 .home{
     display: flex;
     justify-content: space-between;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-family:  sans-serif;
     font-size: 17px;
 }
 .icon{
+    padding-left: 5px;
+    width: 25px;
+}
+.icon-menu{
     padding-left: 5px;
     width: 25px;
 }
@@ -83,8 +94,7 @@
 .cards{
     padding-top: 30px;
     display: flex;
-    justify-content: space-between;
-    width: 1365px;
+    width: 1301px;
     margin: 0 auto;
 }
 .name{
@@ -175,6 +185,7 @@
   }
 .sekil2{
     border-radius: 20px;
+    width: 375px;
 }
 
 .fon4{
@@ -199,8 +210,7 @@
 .text3{
     display: flex;
     justify-content: center;
-    border-radius: 20px;
-    width: 1365px;
+    
 }
 .fon5{
     background-color: rgb(249,249,249);
@@ -241,8 +251,9 @@
 }
 .text5{
    
-    width: 1440px;
+    width: 1300px;
     padding-top: 10px;
+    margin: 0 auto;
 
 }
 .qodef-m-title{
@@ -278,12 +289,11 @@
 }
 .text9{
     display: flex;
-    padding-left: 160px;
     padding-top: 80px;
+    margin: 0 auto;
 }
 .text10{
-    padding-left: 240px;
-    padding-top: 30px;
+    margin: 0 auto;
 }
 .lorem{
     font-family: sans-serif;
@@ -315,15 +325,18 @@
     color: gray;
     font-family: sans-serif;
 }
-
+.text9sekili{
+    margin: 0 auto;
+}
 .ust{
-    margin-left: -134px;
+    display: inline;
+    margin-left: -160px;
     padding-top: 190px;
 }
 .text11{
-    font-size: 30px;
+    font-size: 38px;
     font-family: sans-serif;
-    font-weight: 600;
+    font-weight: 300;
     padding: 0 0 0 40px;
 }
 .sekil7{
@@ -332,11 +345,11 @@
 }
 .populer{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .populer2{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-top: 35px;
 }
 .card4{
@@ -363,6 +376,9 @@
     font-family: sans-serif;
 }
 .flex{
+    display:flex;
+}
+.flex2{
     display:flex;
 }
 .ulduz{
@@ -398,40 +414,59 @@
     font-weight: 600;
     padding: 0 0 0 5px;
 }
+.free-bk3{
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 0 0 0 175px;
+    text-decoration: line-through;
+}
+.color-free3{
+    font-size: 18px;
+    font-family: sans-serif;
+    color: orange;
+    font-weight: 600;
+    padding: 0 0 0 0px;
+}
 .flex-block{
-    width: 1345px;
+    width: 1304px;
     margin: 0 auto;
 }
 .button{
     text-align: center;
+    padding-bottom: 15px;
 }
 .color-orange-hisse{
     background-image: url(./image/althisse.jpg);
-    padding: 25px 0 57px;
+    padding: 20px 0 57px;
+    width: auto;
+    height: auto;
 }
 .text12{
 
-   display: flex;
+    display: flex;
     width: auto;
-    height: 85px;
     justify-content: center; 
     
 }
+.link2-1{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
 .link2{
     
-    background: none;
-    color:white;
+    background-color: transparent;
     padding: 10px 28px;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 50px;
-    border-color: #ffffff;
     margin-top: 30px;
-    
-    
+    text-align: left;
+      
 }
 .link2 span {
     cursor: pointer;
@@ -470,8 +505,7 @@
 .fon7{
     background-color: black;
     width: auto;
-    height: auto;
-    
+    height: 625px;
 
 }
 .logo3{
@@ -490,9 +524,8 @@
 }
 .flex-end{
     display: flex;
-    width: 947px;
-    justify-content: space-between;
-    padding-left: 480px;
+    padding-left: 460px;
+    margin: -20px auto;
 
 }
 .contact{
@@ -516,3 +549,402 @@
     color: gray;
     padding:135px 0 0 70px;
 }
+.font-family{
+    font-family: sans-serif;
+    padding-top: 5px;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px){
+    .fon{
+        display: block;
+    }
+    .fon1{
+        display: none;
+    }
+    .fon3{
+        display: block;
+        width: 100%;
+        font-size: 15px;
+    }
+    .fon4{
+        padding: 0;
+    }
+    .text1{
+        display: block;
+        font-size: 15px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .home{
+        display: none;
+    }
+    .cards{
+        display: block;
+        width: 100%;
+        margin: 0
+    }
+    .card1{
+        height: 100%;
+        width: 290px;
+        box-shadow: none;
+
+    }
+    .card2{
+        height: 100%;
+        width: 290px;
+        box-shadow: none;
+
+    }
+    .card3{
+        height: 100%;
+        width: 290px;
+        box-shadow: none;
+
+    }
+    .sekil2{
+        width: 290px;
+    }
+    .icon{
+        display: none;
+    }
+   
+    .badge{
+        display: none;
+    }
+    .icon-menu{
+        padding-left: 20px;
+    }
+    .text3{
+        display: block;
+        font-size: 17px;
+    }
+    .fon5{
+        width: 100%;
+    }
+    .fon6{
+        width: 100%;
+    }
+    .yazi{
+        display: block;
+        padding: 0px;
+        font-size: 16px;
+    }
+    .yazialti{
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 300px; 
+    }
+    .sekil4{
+        display: block;
+        padding: 0;
+        width: 70%;
+    }
+    .text8{
+        display: block;
+        
+    }
+    .text6{
+        padding: 0;
+    }
+
+    .qodef-m-title{
+        display: block;
+        font-size: 30px;
+        padding:0px
+    }
+    .text9{
+        display: block;
+    }
+    .text9sekili{
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+    .sekil5{
+        width: 285px;
+
+    }
+    .ust{
+        margin: 0;
+    }
+    .text11{
+        display: block;
+        padding: 0;
+        font-size: 24px;
+    }
+    .flex-block{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .populer{
+        display: block;
+    }
+    .card4{
+        width: 300px ;
+        height: 100%;
+    }
+   
+   .color-free{
+    padding-left: 150px;
+
+   }
+   .free-bk{
+    padding-left: 150px;
+   }
+    .populer2{
+        display: block;
+    }
+    .free-bk2{
+        padding-left: 100px;
+    }
+    .free-bk3{
+        padding-left: 100px;
+    }
+    .text12{
+        display: block;
+    }
+    .high{
+        width: 300px;
+    }
+    .fon7{
+        display: block;
+        height: 100%;
+    }
+    .sonlug{
+        display: block;
+    }
+    .flex-end{
+        display: block;
+        padding: 0;
+        padding-top: 30px;
+    }
+    .xett{
+        display: none; 
+    }
+    .end{
+        display: block;
+        padding: 0;
+        padding-top: 30px;
+    }
+    .color-orange-hisse{
+        width: 100%;
+    }
+    .contact{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .learn{
+       padding: 0;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .fon2{
+        padding: 0;
+        width: 100%;
+    }
+    
+    .home{
+        display: block;
+        padding: 0;
+        width: 50%;
+    }
+    .fon3{
+        width: 100%;
+    }
+    .text1{
+        padding-left: 0;
+    }
+    .cards{
+        display: block;
+        width: 100%;
+    }
+    .card1{
+        height: 100%;
+        box-shadow: none;
+    }
+    .card2{
+        height: 100%;
+        box-shadow: none;
+    }
+    .card3{
+        height: 100%;
+        box-shadow: none;
+    }
+    .fon4{
+        padding-top: 30px;
+    }
+    .yazi{
+        padding: 0;
+
+    }
+    .yazialti{
+        margin: 0;
+        padding: 0;
+    }
+    .fon5{
+        width: 100%;
+    }
+    .fon6{
+        width: 100%;
+    }
+    .sekil4{
+        padding-top: 50px;
+    }
+    .text5{
+        width: 100%;
+    }
+
+    .text9sekili{
+        width: 100%;
+    }
+    .ust{
+        margin: 0;
+    }
+    .text10{
+        width: 100%;
+    }
+    .populer{
+        display: block;
+    
+    }
+    .flex-block{
+        width: 100%;
+
+    }
+    .text11{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    .card4{
+        height: 100%;
+    }
+    .populer2{
+        display: block;
+    }
+    .high{
+        width: 100%;
+    }
+    .learn{
+        padding: 0;
+        padding-top: 25px;
+    }
+    .flex-end{
+        padding: 0;
+        margin: 0;
+        padding-top: 20px;
+
+    }
+    .contact{
+        width: 100%;
+    }
+    .end{
+        padding: 0;
+        padding-top: 50px;
+    }  
+
+}
+@media (min-width: 1024px) and (max-width: 1439px){
+    .fon3{
+        width: 100%;
+
+    }
+    .cards{
+        width: 100%;
+        justify-content: space-between;
+
+    }
+    .card1{
+        width: 325px;
+        height: 100%;
+        box-shadow: none;
+    }
+    .card2{
+        width: 325px;
+        height: 100%;
+        box-shadow: none;
+    }
+    .card3{
+        width: 325px;
+        height: 100%;
+        box-shadow: none;
+    }
+    .sekil2{
+        width: 325px;
+    }
+    .fon4{
+        padding: 0;
+
+    }
+    .sekil3{
+        padding: 0;
+    }
+   .fon5{
+    width: 100%;
+   }
+   .yazi{
+    width: 100%;
+   }
+   .yazialti{
+    width: 100%;
+   }
+   .fon6{
+    width: 100%;
+
+   }
+   .text5{
+    width: 100%;
+   
+   }
+   .qodef-m-title{
+    padding: 0;
+    text-align: center;
+   }
+   .flex-block{
+    width: 100%;
+   }
+   .text11{
+    width: 100%;
+   }
+   .card4{
+    display: block;
+    width: 310px;
+   }
+   .color-free{
+    padding: 0;
+    padding-left: 160px;
+   }
+   .free-bk{
+    padding: 0;
+    padding-left: 160px;
+   }
+   .free-bk2{
+    padding: 0;
+    padding-left: 115px;
+
+   }
+   .flex2{
+    padding-top: 30px;
+   }
+   .free-bk3{
+    padding: 0;
+    padding-left: 115px;
+   }
+   .learn{
+    padding: 0;
+    padding-top: 20px;
+   }
+   .flex-end{
+    padding: 0;
+    padding-left: 240px;
+   }
+   .contact{
+    width: 100%;
+   }
+
+   
+}
+
+

@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animasiya.css">
+    
 
 </head>
 <body class="fon">
+
+    <!-- <div class="top-button">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        
+        let mybutton = document.getElementById("myBtn");
+        
+        
+        window.onscroll = function() {scrollFunction()};
+       
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+            function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+    </div> -->
     <div class="fon1">
         <div class="adress">
           <div>
@@ -45,9 +72,9 @@
             <a class="ara"><p class="animasiya1">Podcast</p></a>
         </div>
         <div>
-         <a href="#"><img class="icon" src="./image/shopping-bag.png" alt=""></a>
+         <a href="#" class="notification"><span><img class="icon" src="./image/shopping-bag.png" alt=""></span><span class="badge">0</span></a>
          <a href="#"><img class="icon" src="./image/search.png" alt=""></a>
-         <a href="#"><img class="icon" src="./image/menu.png" alt=""></a>
+         <a href="#"><img class="icon-menu" src="./image/menu.png" alt=""></a>
         </div>
     </div>
 
@@ -59,21 +86,21 @@
 
     <div class="cards">
         <div class="card1">
-            <div><img class="sekil2" src="./image/home-5-img-7.jpg" alt="" width="375px"></div>
+            <div><img class="sekil2" src="./image/home-5-img-7.jpg" alt=""></div>
             <div><h2 class="name">Steb-By-Steb</h2></div>
             <div><h2 class="job">Membership Guide</h2></div>
             <div><a href="https://coachfocus.qodeinteractive.com/our-services/">
             <button class="link"><span>Learn More</span></button></a></div>
         </div>
         <div class="card2">
-            <div><img class="sekil2" src="./image/home-5-img-6.jpg" alt="" width="375px"></div>
+            <div><img class="sekil2" src="./image/home-5-img-6.jpg" alt="" ></div>
             <div><h2 class="name">Membership Tips</h2></div>
             <div><h2 class="job">Guide For Beginners</h2></div>
             <div><a href="https://coachfocus.qodeinteractive.com/our-coaches/">
             <button class="link"><span>Learn More</span></button></a></div>   
         </div>
         <div class="card3">
-            <div><img class="sekil2" src="./image/home-5-img-15.jpg" alt="" width="375px"></div>
+            <div><img class="sekil2" src="./image/home-5-img-15.jpg" alt=""></div>
             <div><h2 class="name">Free Membership</h2></div>
             <div><h2 class="job">Workshop Online today</h2></div>
             <div><a href="https://coachfocus.qodeinteractive.com/courses-no-sidebar/">
@@ -114,25 +141,26 @@
       <div class="text8">
     <div class="text6">
         <div><p class="bir">01</p></div>
-        <div><h4 class="Schedules">Schedules</h4><p class="text7">Lorem ipsum dolor sit amet,<br> consetetur sadip scing elitrsed <br> diam lon.</p></div>
+        <div><h5 class="Schedules">Schedules</h5><p class="text7">Lorem ipsum dolor sit amet,<br> consetetur sadip scing elitrsed <br> diam lon.</p></div>
     </div>
     <div class="text6">
         <div><p class="bir">02</p></div>
-        <div><h4 class="Schedules">Schedules</h4><p class="text7">Lorem ipsum dolor sit amet,<br> consetetur sadip scing elitrsed <br> diam lon.</p></div>
+        <div><h5 class="Schedules">Schedules</h5><p class="text7">Lorem ipsum dolor sit amet,<br> consetetur sadip scing elitrsed <br> diam lon.</p></div>
     </div>
     <div class="text6">
         <div><p class="bir">03</p></div>
-        <div><h4 class="Schedules">Schedules</h4><p class="text7">Lorem ipsum dolor sit amet,<br> consetetur sadip scing elitrsed <br> diam lon.</p></div>
+        <div><h5 class="Schedules">Schedules</h5><p class="text7">Lorem ipsum dolor sit amet,<br> consetetur sadip scing elitrsed <br> diam lon.</p></div>
     </div>
       </div>
     </div>
 
     <div class="text9">
-        <div><img class="sekil5" src="./image/oglan sekil.jpg" alt="" >
-       
-        </div>
-         <div class="ust">
+        <div class="text9sekili">
+            <img class="sekil5" src="./image/oglan sekil.jpg" alt="" >
+        <div class="ust">
             <img class="sekil6" src="./image/oglan seklininustunegeden.jpg" alt=""></div>
+        </div>
+         
       <div class="text10">
         <div><h3 class="take">Take advice from someone <br> who is an agency owner.</h3></div>
         <div><p class="lorem">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed <br> diam nonumy eirmod tempor invidunt ut labore et dolore man <br> aliquyam erat, sed diam vo luptua. At vero eos et accusam et <br> justo duo dolor es et ea rebum. Stet clita kasd gubergren.</p></div>
@@ -145,8 +173,16 @@
     <div><h2 class="text11">View our popular courses</h2></div>
     <div class="populer">
     <div class="card4">
-        <div><img class="sekil7" src="./image/stivmartin.jpg" alt="" width="375px"></div>
-        <div><a>business | coaching</a></div>
+        <div class="image-1">
+            <div id="zoom-in">
+                <figure>
+                    <div><img src="./image/stivmartin.jpg" alt="" width="375px"></div>
+                </figure>
+            </div>
+        </div>
+
+        <div class="font-family"> <a class="animasiya1">business </a> |
+            <a class="animasiya1">coaching  </a></div>
         <div><h2 class="job1">Entrepreneurship and <br> Business Coach Certificate</h2></div>
         <div><h2 class="name2">Stiv Martin</h2></div>
 
@@ -163,8 +199,17 @@
 
     </div>
     <div class="card4">
-        <div><img class="sekil7" src="./image/claraolsen.jpg" alt="" width="375px"></div>
-        <div><a>coaching | health | life </a></div>
+        <div class="image-1">
+            <div id="zoom-in">
+                <figure>
+                    <div><img src="./image/claraolsen.jpg" alt="" width="375px"></div>
+                </figure>
+            </div>
+        </div>
+
+        <div class="font-family"> <a class="animasiya1">coaching </a> |
+            <a class="animasiya1">health  </a> |
+            <a class="animasiya1">life</a></div>
         <div><h2 class="job1">Coaching Business Plan How to <br> Start a Life</h2></div>
         <div><h2 class="name2">Clara Olsen</h2></div>
 
@@ -181,13 +226,23 @@
 
     </div>
     <div class="card4">
-        <div><img class="sekil7" src="./image/stivmartin2.jpg" alt="" width="375px"></div>
-        <div><a>business | life | team </a></div>
+        <div class="image-1">
+            <div id="zoom-in">
+                <figure>
+                    <div><img src="./image/stivmartin2.jpg" alt="" width="375px"></div>
+                </figure>
+            </div>
+        </div>
+        <div class="font-family">
+            <a class="animasiya1">business </a> |
+            <a class="animasiya1">life</a> |
+            <a class="animasiya1">team </a>
+        </div>
         <div><h2 class="job1">Train the Trainer Coach:<br> Complete Guide</h2></div>
         <div><h2 class="name2">Svit Mart</h2></div>
 
     
-        <div class="flex">
+        <div class="flex2">
             <p class="font-1-12">4</p>
             <img class="ulduz" src="./image/star-renliulduz.jpg" alt="">
             <img class="ulduz" src="./image/star-renliulduz.jpg" alt="">
@@ -203,8 +258,14 @@
 
     <div class="populer2">
     <div class="card4">
-        <div><img class="sekil7" src="./image/william hill.jpg" alt="" width="375px"></div>
-        <div><a>business</a></div>
+        <div class="image-1">
+            <div id="zoom-in">
+                <figure>
+                    <div><img src="./image/william hill.jpg" alt="" width="375px"></div>
+                </figure>
+            </div>
+        </div>
+        <div class="font-family"><a class="animasiya1">business</a></div>
         <div><h2 class="job1">Communication Skills Master <br> Class for Life</h2></div>
         <div><h2 class="name2">William Hill</h2></div>
     
@@ -223,8 +284,18 @@
 
 
     <div class="card4">
-        <div><img class="sekil7" src="./image/claraolsen2.jpg" alt="" width="375px"></div>
-        <div><a>coaching | health | life</a></div>
+        <div class="image-1">
+            <div id="zoom-in">
+                <figure>
+                    <div><img src="./image/claraolsen2.jpg" alt="" width="375px"></div>
+                </figure>
+            </div>
+        </div>
+        <div class="font-family">
+            <a class="animasiya1">coaching </a> |
+            <a class="animasiya1">health  </a> |
+            <a class="animasiya1">life</a>
+        </div>
         <div><h2 class="job1">AWS CloudFormation Master <br>Class v2 [2022]</h2></div>
         <div><h2 class="name2">Clara Olsen</h2></div>
     
@@ -242,8 +313,18 @@
     </div>
 
     <div class="card4">
-        <div><img class="sekil7" src="./image/stivmartin3.jpg" alt="" width="375px"></div>
-        <div><a>coaching | life | team </a></div>
+        <div class="image-1">
+            <div id="zoom-in">
+                <figure>
+                    <div><img src="./image/stivmartin3.jpg" alt="" width="375px"></div>
+                </figure>
+            </div>
+        </div>
+        <div class="font-family">
+            <a class="animasiya1">coaching </a> |
+            <a class="animasiya1">life </a> |
+            <a class="animasiya1">team </a>
+        </div>
         <div><h2 class="job1">Microsoft Access Master Class, <br>From Beginner</h2></div>
         <div><h2 class="name2">Stiv Martin</h2></div>
     
@@ -255,8 +336,8 @@
             <img class="ulduz" src="./image/star-renliulduz.jpg" alt="">
             <img class="ulduz" src="./image/star-renliulduz.jpg" alt="">
             <img class="ulduz" src="./image/bozulduz.jpg" alt="">
-            <p class="free-bk2">$16.00</p>
-            <p class=" color-free2">$08.00</p>
+            <p class="free-bk3">$16.00</p>
+            <p class=" color-free3">$08.00</p>
         </div>
     </div>
 
@@ -270,56 +351,49 @@
       <div class="color-orange-hisse">
         <div class="text12">
         <div><h3 class="high">High performance team coaching.<br>You should join us.</h3></div>
-        <div class="learn"><a href="https://coachfocus.qodeinteractive.com/our-coaches/"><button class="link2"><span>Learn More</span></button></a></div>
+        <div class="learn"><a href="https://coachfocus.qodeinteractive.com/our-coaches/"><button class="link2  link2-1"><span>Learn More</span></button></a></div>
         </div>
       </div>
 
 
          <div class="fon7">
-            <div class="sonlug"><img class="logo3" src="./image/logo-footer-white.png" alt="">
-                <div class="xett"><hr></div>
-                <div class="xett"><hr></div>
-                <div class="xett"><hr></div>
-            </div>
+          
+                                  <div class="sonlug"><img class="logo3" src="./image/logo-footer-white.png" alt=""></div>
+
          <div class="flex-end">
             <div class="contact">
+                <div class="xett"><hr></div>
                 <h2 class="info">Contact Info</h2>
-                <a><h4 class="tel">Avenue Reine 1190,<br>Brussels, Belgium</h4></a>
-                <a><h4 class="tel">+32 2 512 08 15</h4></a>
-                <a><h4 class="tel">coachfocus@info.com</h4></a>
+                <a><h4 class="tel animasiya2 animasiya3">Avenue Reine 1190,<br> Brussels, Belgium</h4></a>
+                <a><h4 class="tel animasiya2 animasiya4">+32 2 512 08 15</h4></a>
+                <a><h4 class="tel animasiya2 animasiya5">coachfocus@info.com</h4></a>
             </div>
 
             <div class="contact">
+                <div class="xett"><hr></div>
                 <h2 class="info">Our Online Courses</h2>
-                <h4 class="tel">Languages Clases</h4>
-                <h4 class="tel">Communication Skills</h4>
-                <h4 class="tel">Entrepreneurs and Business</h4>
-                <h4 class="tel">Design Skills</h4>
-                <h4 class="tel">Developing Courses</h4>
-                <h4 class="tel">Business Coaching</h4>
+                <h4 class="tel animasiya2 animasiya17">Languages Clases</h4>
+                <h4 class="tel animasiya2 animasiya6">Photography Online</h4>
+                <h4 class="tel animasiya2 animasiya7">Communication Skills</h4>
+                <h4 class="tel animasiya2 animasiya8">Entrepreneurs and Business</h4>
+                <h4 class="tel animasiya2 animasiya9">Design Skills</h4>
+                <h4 class="tel animasiya2 animasiya10">Developing Courses</h4>
+                <h4 class="tel animasiya2 animasiya11">Business Coaching</h4>
             </div>
 
             <div class="contact">
+                <div class="xett"><hr></div>
                 <h2 class="info">Social Media</h2>
-                <h4 class="tel">facebook</h4>
-                <h4 class="tel">linkedin</h4>
-                <h4 class="tel">instagram</h4>
-                <h4 class="tel">dribbble</h4>
-                <h4 class="tel">behance</h4>
+                <h4 class="tel animasiya2 animasiya12">facebook</h4>
+                <h4 class="tel animasiya2 animasiya13">linkedin</h4>
+                <h4 class="tel animasiya2 animasiya14">instagram</h4>
+                <h4 class="tel animasiya2 animasiya15">dribbble</h4>
+                <h4 class="tel animasiya2 animasiya16">behance</h4>
             </div>
          </div>
-
+                        
             <div class="end"><p>© 2022 Qode Interactive, All Rights Reserved</p></div>
         </div>
-
-    
-    
-    
-
-
-
-    
-
     
 </body>
 </html>

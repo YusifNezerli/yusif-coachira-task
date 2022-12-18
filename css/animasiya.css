@@ -1,0 +1,131 @@
+.animasiya1{
+    display: inline-block;
+    padding-bottom: 0.20rem;
+    position: relative;
+}
+.animasiya1::before{
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: gray;
+    transition: width 0.25s ease-out;
+}
+.animasiya1:hover::before{
+    width: 100%;
+}
+
+.animasiya2{
+   
+    padding-bottom: 0.10rem;
+    position: relative;
+}
+.animasiya2::before{
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color:white;
+    transition: width 0.25s ease-out;
+}
+h4:hover{
+    color:white;
+    left: 0;
+    bottom: 0px;
+    transition: 0.65s ease-out;
+    cursor: pointer;
+}
+
+.animasiya3:hover::before{
+    width: 145px;
+}
+.animasiya4:hover::before{
+    width: 40%;
+}
+.animasiya5:hover::before{
+    width: 53%;
+}
+.animasiya6:hover::before{
+    width: 48%;
+}
+.animasiya7:hover::before{
+    width: 52%;
+}
+.animasiya8:hover::before{
+    width: 68%;
+}
+.animasiya9:hover::before{
+    width: 31%;
+}
+.animasiya10:hover::before{
+    width: 49%;
+}
+.animasiya11:hover::before{
+    width: 46%;
+}
+.animasiya12:hover::before{
+    width: 22%;
+}
+.animasiya13:hover::before{
+    width: 18%
+}
+.animasiya14:hover::before{
+    width: 24%;
+}
+.animasiya15:hover::before{
+    width: 20%;
+}
+.animasiya16:hover::before{
+    width: 21%;
+}
+.animasiya17:hover::before{
+    width: 46%;
+}
+
+.notification {
+    background-color:none;
+    color: white;
+    text-decoration: none;
+    padding: 1px 8px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+}
+  
+.notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 2px 7px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+
+.image-1{
+    display: inline-block;
+}
+figure{
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 0 0px;
+}
+.image-1 img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.image-1 #zoom-in figure img{
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+.image-1 #zoom-in figure:hover img{
+    transform: scale(1.1);
+}
+
+
+
