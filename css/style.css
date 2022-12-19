@@ -85,6 +85,7 @@
     margin: 0 auto;
     color:white;
     font-size: 32px;
+    font-family: sans-serif;
 }
 .text1{
     padding-left: 70px;
@@ -641,10 +642,14 @@
         padding: 0;
         width: 70%;
     }
+    .text5{
+        width: 100%;
+    }
     .text8{
         display: block;
-        
+        width: 100%;  
     }
+    
     .text6{
         padding: 0;
     }
@@ -714,6 +719,7 @@
     }
     .sonlug{
         display: block;
+        width: 100%;
     }
     .flex-end{
         display: block;
@@ -737,6 +743,11 @@
     }
     .learn{
        padding: 0;
+    }
+    #myBtn{
+    width: 55px;
+    height: 55px;
+    right: 10px;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px){
@@ -844,6 +855,14 @@
         padding: 0;
         padding-top: 50px;
     }  
+    .sonlug{
+        width: 100%;
+    }
+    #myBtn{
+    width: 65px;
+    height: 65px;
+    right: 10px;
+   }
 
 }
 @media (min-width: 1024px) and (max-width: 1439px){
@@ -907,6 +926,7 @@
    }
    .text11{
     width: 100%;
+    padding: 0;
    }
    .card4{
     display: block;
@@ -943,6 +963,10 @@
    .contact{
     width: 100%;
    }
+   .sonlug{
+    width: 100%;
+   }
+   
 
    
 }
